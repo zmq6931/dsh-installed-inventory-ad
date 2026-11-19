@@ -1,0 +1,54 @@
+{
+  "name": "dsh-installed-inventory-ad",
+  "version": "1.0.0",
+  "description": "Installed inventory for DeepSeek Harness: one Settings tab listing every plugin this profile loads and every skill a conversation can invoke, with enablement, live phase, and skill sources.",
+  "license": "MIT",
+  "author": "Andy Zhu",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zmq6931/dsh-installed-inventory-ad.git"
+  },
+  "homepage": "https://github.com/zmq6931/dsh-installed-inventory-ad#readme",
+  "bugs": {
+    "url": "https://github.com/zmq6931/dsh-installed-inventory-ad/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "inventory",
+    "plugins",
+    "skills",
+    "settings"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}

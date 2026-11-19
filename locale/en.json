@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Installed inventory",
+    "description": "Lists the plugin bundles this profile installed — the same set the sidebar Plugins page manages — with an enable switch that writes the profile selection and an Uninstall action for removable bundles. Every change is performed by the plugin manager, and its outcome is reported as returned: applied, restart required, overridden, failed, or cancelled. A second section lists the skills the open conversation can invoke. Opens as an Installed tab after mcp-visualizer in every conversation, and as a page in Settings > Built-in plugins."
+  }
+}

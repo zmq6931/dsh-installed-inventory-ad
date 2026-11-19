@@ -1,0 +1,3 @@
+- insert:
+    - id: installed-inventory-ad
+      name: 'dsh-installed-inventory-ad'
